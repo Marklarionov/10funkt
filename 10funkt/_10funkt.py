@@ -1,5 +1,5 @@
-﻿spis=["Один","два","3","Четыре","lOl","6","сЕМЬ"]
-text=["estonia"]
+spis=["Один","два","3","Четыре","lOl","6","сЕМЬ"]
+text=["ESTonia"]
 while True:
     Answ=input("Хотите узнать функции списков? (1 - да / 0 - нет)")
     print(spis)
@@ -9,10 +9,10 @@ while True:
         print("3-Сделать список в нижнем регистре")
         print("4-Показывает наибольшое значение в списке")
         print("5-Перевернуть список")
-        print("6-Колличество символов в списке")
-        print("7-Сортировать список от меньшего к большему")
-        print("8-Удалить элемент в конце списка")
-        print("9-Добавить элемент в конец списка")
+        print("6-Выводит символ по его числовому значению")
+        print("7-Выводит число по значению его символа")
+        print("8-")
+        print("9-Преобразовывает список в строку")
         print("10-Очищает список")
         Answ2=input("Выбери число: ")
         if Answ2=="1":
@@ -26,17 +26,19 @@ while True:
         elif Answ2=="5":                
             spis.reverse()
             print(spis)
-        elif Answ2=="6":                
-            print(len(spis))
+        elif Answ2=="6": 
+            a=chr(43)
+            print(a)
         elif Answ2=="7":
-            spis.sort()
-            print(spis)
-        elif Answ2=="8":  
-            spis.pop()
-            print(spis)
+            a=ord("+")
+            print(a)
+        elif Answ2=="8":
+            strspis=" ".join(spis)
+            strspis.title()
+            print(strspis)
         elif Answ2=="9":
-            spis.append(input("Добавить элемент: "))
-            print(spis)
+            strspis="".join(spis)
+            print(strspis)
         elif Answ2=="10":
             spis.clear()
             print(spis)
